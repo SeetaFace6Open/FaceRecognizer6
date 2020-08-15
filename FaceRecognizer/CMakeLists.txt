@@ -73,7 +73,7 @@ else()
 endif()
 
 # build dir
-set(OUT_DIR ${SOLUTION_DIR}/build)
+set(OUT_DIR ${SOLUTION_DIR}/../build)
 #set(OUT_DIR ${SEETA_INSTALL_PATH}/${SeetaFaceRecognizer_NAME})
 
 #create install dir
