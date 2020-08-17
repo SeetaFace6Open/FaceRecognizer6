@@ -5,9 +5,8 @@ export BUILD_TYPE=Release
 export PLATFORM_TARGET=x64
 
 export PLATFORM=x64
-export ORZ_HOME=/usr/local
-
-export SSL_HOME=/usr
+export ORZ_HOME=../../build
+export INSTALL_DIR=../../build
 
 HOME=$(cd `dirname $0`; pwd)
 
@@ -22,13 +21,11 @@ cmake "$HOME/.." \
 -DCMAKE_BUILD_TYPE="$BUILD_TYPE" \
 -DCONFIGURATION="$BUILD_TYPE" \
 -DPLATFORM="$PLATFORM_TARGET" \
--DOPENSSL_ROOT_DIR="$SSL_HOME" \
 -DORZ_ROOT_DIR="$ORZ_HOME" \
 -DCMAKE_INSTALL_PREFIX="$INSTALL_DIR" \
--DCMAKE_MODULE_PATH="/wqy/seeta_sdk/sdk/sdk6.0/common/tensorstack/cmake;/wqy/seeta_sdk/sdk/sdk6.0/common/seetaauthorize/cmake" \
+-DCMAKE_MODULE_PATH="" \
 -DSEETA_AUTHORIZE=OFF \
 -DSEETA_MODEL_ENCRYPT=ON
 
 make -j16
-#make install
 
