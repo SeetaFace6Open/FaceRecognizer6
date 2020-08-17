@@ -29,3 +29,4 @@ cmake "$HOME/.." \
 
 make -j16
 
+make install
