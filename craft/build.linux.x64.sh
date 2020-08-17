@@ -5,8 +5,8 @@ export BUILD_TYPE=Release
 export PLATFORM_TARGET=x64
 
 export PLATFORM=x64
-export ORZ_HOME=../../build
-export INSTALL_DIR=../../build
+export ORZ_HOME=$(cd "$(dirname "$0")"; pwd)/../../build
+export INSTALL_DIR=$(cd "$(dirname "$0")"; pwd)/../../build
 
 HOME=$(cd `dirname $0`; pwd)
 
