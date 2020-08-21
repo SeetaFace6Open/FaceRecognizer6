@@ -32,7 +32,7 @@ LOCAL_SRC_FILES := $(MY_CPP_LIST:$(LOCAL_PATH)/%=%)
 
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/include
 
-LOCAL_LDFLAGS += -L$(LOCAL_PATH)/lib -fuse-ld=bfd.exe
+LOCAL_LDFLAGS += -L$(LOCAL_PATH)/lib
 
 LOCAL_LDLIBS += -llog -lz
 
